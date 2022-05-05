@@ -40,20 +40,22 @@ puppeteerExtra.use(stealthPlugin());
   // console.log(`my name is ${abc}`);
   // await page.type('[name="to"]',to);
   //Body 
-  await page.type('input[name="subjectbox"]',  "Need Referral For SDE Intern",{delay:60});
-  await page.type('.Am.Al.editable.LW-avf.tS-tW', ` I am Vivek Gupta , a third year student pursuing B.tech from Narula Institute of Technology and Currenty looking for internship roles , My key skills are - Strong Problem Solving, C, C++, Java OOPs, DBMS.
+  await page.type('input[name="subjectbox"]',  "Thank you for visiting us!",{delay:30});
+  await page.type('.Am.Al.editable.LW-avf.tS-tW', ` Hi Visitor,
+
+  Thank you so much for taking the time out of your busy schedule to visit our project. We hope you enjoyed our experience and could learn some valuable insights you can implement in future. It was a very wonderful and insightful meeting with you.
+  Feel free to share your experience and ideas with your colleagues who may be interested.
+  Thanks again for the opportunity. Warm Regards!
   
-I have completed 200+ questions on leetcode.It will be great If you can refer me for this role 
-Job id - ${jobId}
-Thank You
-Resume - ${linkToResume}`,{delay:60});
+  Thanks,
+  DuoCoders Team`,{delay:40});
 
 //Resume Attach
-const [fileChooser] = await Promise.all([
-  page.waitForFileChooser(),
-  page.click(".a1.aaA.aMZ"),
-  ]);
-await fileChooser.accept(["C:/Users/vivek/Desktop/Resume FInal.pdf"]);
+// const [fileChooser] = await Promise.all([
+//   page.waitForFileChooser(),
+//   page.click(".a1.aaA.aMZ"),
+//   ]);
+// await fileChooser.accept(["C:/Users/vivek/Desktop/Resume FInal.pdf"]);
 
 
 
